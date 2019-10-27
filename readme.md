@@ -5,6 +5,8 @@ host: aloja.me
 
 rename .env.example to .env
 
+copy assets from root folder to /storage/public
+
 composer install
 
 php artisan key:generate
