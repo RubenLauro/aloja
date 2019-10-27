@@ -3,6 +3,14 @@
 ## Project setup
 host: aloja.me
 
+rename .env.example to .env
+
+composer install
+
+php artisan key:generate
+
+php artisan passport:install (copiar o client id e client secret do "Password grant client created successfully." para LoginControllerAPI)
+
 database name: alojaonline
 
 username:root
@@ -10,8 +18,6 @@ username:root
 password: 
 
 import db.sql
-
-composer install
 
 php artisan storage:link
 
